@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<parametros>
+	<pathDownloadZip>/Descargados/</pathDownloadZip>
+	<pahtDownloadXML>/XMLCorreo/</pahtDownloadXML>
+	<pahtDownloadSRI>/XmlSri/</pahtDownloadSRI>
+	<urlMailIn>imap://hfuentes:cima2012@mail.cimait.com.ec:143/INBOX</urlMailIn>
+	<hostMailIn>mail.cimait.com.ec</hostMailIn>
+	<hostMailOut>mail.cimait.com.ec</hostMailOut>
+	<portMailIn>143</portMailIn>
+	<portMailOut>25</portMailOut>
+	<userMail>hfuentes</userMail>
+	<passMail>cima2012</passMail>
+	<userMailOut>hfuentes</userMailOut>
+	<passMailOut>cima2012</passMailOut>
+	<folderMail>INBOX</folderMail>
+	<protocolMAilIn>imap</protocolMAilIn>
+	<protocolMAilOut>smtp</protocolMAilOut>
+	<flagEnable>S</flagEnable>
+	<TimeDelay>2</TimeDelay>
+	<pathAutorizados>/Autorizados/</pathAutorizados>
+	<pahtNoAutorizados>/NoAutorizados/</pahtNoAutorizados>
+	<pahtFirmados>/Firmados/</pahtFirmados>
+	<ambiente>2</ambiente>
+	<pahtDownloadPDF>/PDFCorreo/</pahtDownloadPDF>
+	<emailSitemas>hfuentes@cimait.com.ec</emailSitemas>
+	<emailOperativo>hfuentes@cimait.com.ec</emailOperativo>
+</parametros>

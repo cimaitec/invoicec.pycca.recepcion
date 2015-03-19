@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<Nodos>
+<factura name="factura" type="NODESET">
+    <Nodo name="infoTributaria" type="NODESET">
+        <Subnodo name="ambiente" type="STRING" typeError="error">ambiente</Subnodo>
+        <Subnodo name="tipoEmision" type="STRING" typeError="warning">tipoEmision</Subnodo>
+        <Subnodo name="razonSocial" type="STRING" typeError="information">razonSocial</Subnodo>
+        <Subnodo name="nombreComercial" type="STRING" typeError="warning">nombreComercial</Subnodo>
+        <Subnodo name="ruc" type="STRING" typeError="error">ruc</Subnodo>
+        <Subnodo name="codDoc" type="STRING" typeError="error">codDoc</Subnodo>
+        <Subnodo name="estab" type="STRING" typeError="error">estab</Subnodo>
+        <Subnodo name="ptoEmi" type="STRING" typeError="error">ptoEmi</Subnodo>
+        <Subnodo name="secuencial" type="STRING" typeError="error">secuencial</Subnodo>
+        <Subnodo name="dirMatriz" type="STRING" typeError="information">dirMatriz</Subnodo>
+	</Nodo>
+	<Nodo name="infoFactura" type="NODESET" >
+        <Subnodo name="fechaEmision" type="STRING" typeError="error">fechaEmision</Subnodo>
+        <Subnodo name="dirEstablecimiento" type="STRING" typeError="error">dirEstablecimiento</Subnodo>
+        <Subnodo name="contribuyenteEspecial" type="STRING" typeError="error">contribuyenteEspecial</Subnodo>
+        <Subnodo name="obligadoContabilidad" type="STRING" typeError="error">obligadoContabilidad</Subnodo>
+        <Subnodo name="tipoIdentificacionComprador" type="STRING" typeError="error">tipoIdentificacionComprador</Subnodo>
+        <Subnodo name="identificacionComprador" type="STRING" typeError="error">identificacionComprador</Subnodo>
+        <Subnodo name="totalSinImpuestos" type="STRING" typeError="information">totalSinImpuestos</Subnodo>
+        <Subnodo name="totalDescuento" type="STRING" typeError="warning">totalDescuento</Subnodo>
+        <Subnodo name="importeTotal" type="STRING" typeError="error">importeTotal</Subnodo>
+        <Subnodo name="moneda" type="STRING" typeError="error">moneda</Subnodo>
+		<Subnodo name ="totalConImpuestos" type="NODESET">
+			<nodoDetalle name="totalImpuesto" type="NODESET">
+				<SubnodoDetalle name="codigo" type="STRING" typeError="error">codigo</SubnodoDetalle>
+				<SubnodoDetalle name="valor" type="STRING" typeError="error">valor</SubnodoDetalle>
+				<SubnodoDetalle name="baseImponible" type="STRING" typeError="error">baseImponible</SubnodoDetalle>
+			</nodoDetalle>
+			<nodoDetalle name="iva" type="NODESET">
+				<SubnodoDetalle name="valor" type="STRING" typeError="warning">valor</SubnodoDetalle>
+				<SubnodoDetalle name="codigo" type="STRING" typeError="information">codigo</SubnodoDetalle>
+			</nodoDetalle>
+		</Subnodo>
+    </Nodo>
+	<Nodo name="detalles" type="NODESET">
+		<Subnodo name="detalle" type="NODESET">
+			<nodoDetalle name="codigoPrincipal" type="STRING" typeError="warning">codigoPrincipal</nodoDetalle>
+			<nodoDetalle name="codigoAuxiliar" type="STRING" typeError="information">codigoAuxiliar</nodoDetalle>
+			<nodoDetalle name="cantidad" type="STRING" typeError="error">cantidad</nodoDetalle>
+			<nodoDetalle name="precioUnitario" type="STRING" typeError="error">precioUnitario</nodoDetalle>
+			<nodoDetalle name="descuento" type="STRING" typeError="information">descuento</nodoDetalle>
+			<nodoDetalle name="precioTotalSinImpuesto" type="STRING" typeError="error">precioTotalSinImpuesto</nodoDetalle>
+			<nodoDetalle name ="impuestos" type="NODESET">
+				<SubnodoDetalle name="impuesto" type="NODESET">
+					<Detalle name="codigo" type="STRING" typeError="error">codigo</Detalle>
+					<Detalle name="codigoPorcentaje" type="STRING" typeError="warning">codigoPorcentaje</Detalle>
+				</SubnodoDetalle>
+				<SubnodoDetalle name="iva" type="NODESET">
+					<Detalle name="valor" type="STRING" typeError="information">valor</Detalle>
+					<Detalle name="codigo" type="STRING" typeError="error">codigo</Detalle>
+				</SubnodoDetalle>
+				<SubnodoDetalle name="nombre" type="STRING">VICTOR PINCAY</SubnodoDetalle>
+			</nodoDetalle>
+		</Subnodo>
+	</Nodo>
+</factura>
+<notaCredito>
+    <Nodo name="infoTributaria" type="NODESET">
+        <Subnodo name="ambiente" type="STRING" typeError="error">ambiente</Subnodo>
+        <Subnodo name="tipoEmision" type="STRING" typeError="warning">tipoEmision</Subnodo>
+        <Subnodo name="razonSocial" type="STRING" typeError="information">razonSocial</Subnodo>
+        <Subnodo name="nombreComercial" type="STRING" typeError="warning">nombreComercial</Subnodo>
+	</Nodo>
+	<Nodo name="infoFactura" type="NODESET" >
+        <Subnodo name="fechaEmision" type="STRING" typeError="error">fechaEmision</Subnodo>
+        <Subnodo name="dirEstablecimiento" type="STRING" typeError="error">dirEstablecimiento</Subnodo>
+        <Subnodo name="contribuyenteEspecial" type="STRING" typeError="error">contribuyenteEspecial</Subnodo>
+		<Subnodo name ="impuesto" type="NODESET">
+			<nodoDetalle name="impuesto" type="NODESET">
+				<SubnodoDetalle name="codigo" type="STRING" typeError="error">codigo</SubnodoDetalle>
+				<SubnodoDetalle name="valor" type="STRING" typeError="error">valor</SubnodoDetalle>
+			</nodoDetalle>
+			<nodoDetalle name="iva" type="NODESET">
+				<SubnodoDetalle name="valor" type="STRING" typeError="warning">valor</SubnodoDetalle>
+				<SubnodoDetalle name="codigo" type="STRING" typeError="information">codigo</SubnodoDetalle>
+			</nodoDetalle>
+		</Subnodo>
+    </Nodo>
+	<Nodo name="detalles" type="NODESET">
+		<Subnodo name="detalle" type="NODESET">
+			<nodoDetalle name="codigoPrincipal" type="STRING" typeError="warning">codigoPrincipal</nodoDetalle>
+			<nodoDetalle name ="impuesto" type="NODESET">
+				<SubnodoDetalle name="impuesto" type="NODESET">
+					<Detalle name="codigo" type="STRING" typeError="error">codigo</Detalle>
+					<Detalle name="valor" type="STRING" typeError="warning">valor</Detalle>
+				</SubnodoDetalle>
+				<SubnodoDetalle name="iva" type="NODESET">
+					<Detalle name="valor" type="STRING" typeError="information">valor</Detalle>
+					<Detalle name="codigo" type="STRING" typeError="error">codigo</Detalle>
+				</SubnodoDetalle>
+				<SubnodoDetalle name="nombre" type="STRING">VICTOR PINCAY</SubnodoDetalle>
+			</nodoDetalle>
+		</Subnodo>
+	</Nodo>
+</notaCredito>
+
+</Nodos>
